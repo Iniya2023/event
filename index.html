@@ -1,35 +1,56 @@
 <!DOCTYPE HTML>
 <HTML>
 	<HEAD> 
-		<TITLE>EVENTS</TITLE/>
+		<TITLE>EVENTS</TITLE>
 		<meta charset="UTF-8">
-		<meta name="viewport"
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		
+		<style>
+		*{
+			padding:0%;
+			margin:0%;
+			box-sizing:border-box;
+		}
+		</style> 
 	</HEAD>
 <body>
+ <section>
+	<div id="event-container">
+		<div id="event-row">
+			
+				<h1>EventTask</h1>
+				
+				<img src="img/eve.jpg">
+			<div id="event-col">
+						
+					<div class="event">
+						
+						<button onclick="edit(event)" > Edit </button>
+						
+					</div>
+					<div class="event">
+					 
+						
+						<button ondblclick="get(event)"> Get </button>
+						 
+					</div>
+					<div class="event" >
+						
+						<button onclick="create(event)"> Create </button>
+					</div>
+					<div class="event">
+						
+						<button ondblclick="del(event)"> Delete </button>
 
-	 <div class="event">
-	 
-		<h1>EventTask</h1>
-		
-		<img src="img/eve.jpg">
-		
-		<button onclick="edit(event)" > Edit </button>
-	 </div>
-	 <div class="event">
-	 
-		<a href="https://media-cdn.tripadvisor.com/media/photo-s/0e/9e/09/9c/family-function-3.jpg">FunctionEvents </a>
-		 <button ondblclick="get(event)"> Get </button>
-		 
-	 </div>
-	 <div class="event">
-		
-		<button onclick="create(event)"> Create </button>
-	 </div>
-	 <div class="event">
-		
-		<button ondblclick="del(event)"> Delete </button>
+					</div>
+					
+			</div>		
+					
+		</div>
+	</div>
+</section>
 
-	 </div>
 	<script src="main.js">
 	
 	
