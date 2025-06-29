@@ -20,6 +20,7 @@ function get(){
 	
 console.log(h[0].innerText);
 console.log("Image Width:", image[0].style.width);
+let newimage=image[0].src = "https://img.freepik.com/free-photo/closeup-scarlet-macaw-from-side-view-scarlet-macaw-closeup-head_488145-3540.jpg?semt=ais_hybrid&w=740";
 
 }
 function create(){
@@ -33,21 +34,18 @@ function create(){
 	
 	let a=document.createElement("a");
 	
-	a.setAttribute('href','#');
+	a.setAttribute('href','new');
 	a.href ="https://www.google.com/url?sa=i&url=https%3A%2F%2Feventphotos.com.au%2F&psig=AOvVaw2amXNouDeRXlWPYq8k6YTf&ust=1751093806186000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKjI5PWCkY4DFQAAAAAdAAAAABAE";
-	
+	a.innerText="eventlink";
 	creation.appendChild(a);
 	console.log(creation);
-	
-	
-	
 	 
 }
-
-
-	
+let newimage=document.getElementsByTagName("img");
+let a=document.getElementsByTagName("a");
 function del() {
-	let atag=document.getElementsByTagName("a");
-  atag[0].removeAttribute('href');
-  console.log(atag[0]); 
+	
+	//newimage[0].remove();
+console.log(a[0].remove());
+	
 }
